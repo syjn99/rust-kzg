@@ -25,11 +25,13 @@ pub enum CKzgRet {
 }
 
 #[repr(C)]
+#[derive(Debug, Copy, Clone, Hash, PartialEq, Eq)]
 pub struct Bytes32 {
     pub bytes: [u8; 32],
 }
 
 #[repr(C)]
+#[derive(Debug, Copy, Clone, Hash, PartialEq, Eq)]
 pub struct Bytes48 {
     pub bytes: [u8; 48],
 }
@@ -40,6 +42,7 @@ pub struct BLSFieldElement {
 }
 
 #[repr(C)]
+#[derive(Debug, Hash, PartialEq, Eq)]
 pub struct Blob {
     pub bytes: [u8; BYTES_PER_BLOB],
 }
