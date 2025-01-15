@@ -23,3 +23,10 @@ pub mod poly;
 pub mod recover;
 pub mod utils;
 pub mod zero_poly;
+
+// For Lighthouse compatibility
+pub use kzg::eth::*;
+
+pub type Bytes32 = kzg::eth::c_bindings::Bytes32;
+pub type Bytes48 = kzg::eth::c_bindings::Bytes48;
+pub type Blob = kzg::eth::c_bindings::Blob;

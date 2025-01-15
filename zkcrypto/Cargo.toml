@@ -24,6 +24,7 @@ rand = { version = "0.8.5" }
 default = [
     "std",
     "rand",
+    "c_bindings"
 ]
 std = [
     "kzg/std",
